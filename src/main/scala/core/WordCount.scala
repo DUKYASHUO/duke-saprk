@@ -1,6 +1,8 @@
+package core
+
 import org.apache.spark.sql.SparkSession
 
-object CoreSpark {
+object WordCount {
 
   def main(args: Array[String]): Unit = {
     val logFile = args(0)
