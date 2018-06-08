@@ -16,7 +16,7 @@ object BasicCore {
     printDiy(totalLength)
 
     // 每行的字符简单的处理
-    val funRdd = lines.map(MyFunction.fun1)
+    val funRdd = lines.map(MyFunction.fun)
     val funReduce = funRdd.reduce((a, b) => a + "<==>" + b)
     printDiy(funReduce)
 
@@ -43,7 +43,7 @@ object BasicCore {
 }
 
 object MyFunction {
-  def fun1(s: String): String = {
+  def fun(s: String): String = {
     s + "123123123"
   }
 }
